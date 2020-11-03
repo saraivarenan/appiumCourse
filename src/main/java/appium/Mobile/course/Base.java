@@ -24,12 +24,12 @@ public class Base
 		AndroidDriver<AndroidElement>  driver;
     		// TODO Auto-generated method stub
     	 File appDir = new File("src");
-         File app = new File(appDir, "ApiDemos-debug.apk");
+         File app = new File(appDir, "EasyShops.apk");
          DesiredCapabilities capabilities = new DesiredCapabilities();
          
          capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android9");
          capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
-        driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), 	capabilities);
+        driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
     	    return driver; 
     	}
 public static void tempo(int tempo) {
