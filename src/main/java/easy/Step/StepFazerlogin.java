@@ -5,18 +5,20 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import easy.PObject.AcessoLogin;
+import easy.PObject.FazerBuscar;
 
 import java.net.MalformedURLException;
 
 public class StepFazerlogin {
 	AcessoLogin acesso = new AcessoLogin();
+	FazerBuscar fazerBuscar = new FazerBuscar();
 
 	public StepFazerlogin() throws MalformedURLException {
 	}
 
 
 	@Given("^usuario acessou o app$")
-	public void usuario_acessou_o_app()  {
+	public void usuario_acessou_o_app(){
 		acesso.acessarApp();
 
 	}
@@ -27,6 +29,7 @@ public class StepFazerlogin {
 	}
 	@Then("^deve ser apresentado a tela inicial do App$")
 	public  void validarTelaInicial(){
+		fazerBuscar.validarItemPesquisadoLoja();
 
 	}
 }
