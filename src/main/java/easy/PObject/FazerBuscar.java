@@ -6,11 +6,8 @@ import io.appium.java_client.android.AndroidElement;
 
 import java.net.MalformedURLException;
 
-public class FazerBuscar extends Base {
-	AndroidDriver<AndroidElement> driver = capabilities();
+public class FazerBuscar  {
 
-	public FazerBuscar() throws MalformedURLException {
-	}
 
 	public void fazerBuscaLoja()  {
 	}

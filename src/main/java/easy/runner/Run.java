@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)			
 @CucumberOptions(
-		features="fazerlogin.feature",
+		features="fazerBusca.feature",
 		glue={"easy.Step"}
 		)
 public class Run {

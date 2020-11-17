@@ -6,15 +6,14 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import easy.PObject.AcessoLogin;
 import easy.PObject.FazerBuscar;
-
+import easy.utils.Base;
+import io.appium.java_client.android.AndroidDriver;
 import java.net.MalformedURLException;
-
-public class StepFazerlogin {
+public class StepFazerlogin extends Base {
 	AcessoLogin acesso = new AcessoLogin();
 	FazerBuscar fazerBuscar = new FazerBuscar();
 
-	public StepFazerlogin() throws MalformedURLException {
-	}
+
 
 
 	@Given("^usuario acessou o app$")
